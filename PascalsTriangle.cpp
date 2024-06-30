@@ -27,3 +27,31 @@ vector<vector<int> > generate1=generate(7);
         cout << endl; 
     }
 }
+
+/*  LEETCODE
+
+
+vector<int> generaterow(int row){
+    int ans=1;
+    vector<int> v;
+    v.push_back(ans);
+    for (int i=1;i<row;i++ ){
+ans*=row-i;
+ans/=i;
+v.push_back(ans);
+    }
+    return v;
+}
+class Solution {
+public:
+    vector<vector<int>> generate(int numRows) {
+   vector <vector <int> > answer;
+   for (int i=1;i<=numRows;i++){
+answer.push_back(generaterow(i));
+   }
+   return answer;
+    }
+};
+
+
+*/
