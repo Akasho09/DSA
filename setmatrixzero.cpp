@@ -54,6 +54,7 @@ int main (){
         cout << endl; 
     }
 
-
     }
 }
+
+// g++ -std=c++11 setmatrixzero.cpp -o a
