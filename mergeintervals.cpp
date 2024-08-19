@@ -31,5 +31,4 @@ v= merge(v);
     }
         cout << endl;
     }
-
 }
