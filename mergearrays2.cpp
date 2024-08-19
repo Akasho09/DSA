@@ -1,3 +1,4 @@
+//SORTED DIFFERENTLY ARRAYS  !GAP METHOD!
 #include <iostream>
 #include <vector>
 using namespace std;
