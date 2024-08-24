@@ -1,3 +1,5 @@
+//MOORES VOTING ALGORITHM
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -32,6 +34,6 @@ v.push_back(1);
 v.push_back(3);
 v.push_back(6);
 v.push_back(1);
-   cout << majorityElement(v);
+cout << majorityElement(v);
 
 }
