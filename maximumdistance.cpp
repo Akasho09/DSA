@@ -31,5 +31,4 @@ v2.push_back(10);
 v2.push_back(5);
 
 cout << maxDistance(v,v2);
-
 }
