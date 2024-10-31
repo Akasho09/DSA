@@ -1,5 +1,4 @@
 //MOORES VOTING ALGORITHM
-
 #include <iostream>
 #include <vector>
 using namespace std;
