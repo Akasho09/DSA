@@ -12,3 +12,17 @@ int main() {
 
     return 0;
 }
+
+// #include <iostream>
+// #include <string>
+// #include <algorithm> // For std::swap
+
+// int main() {
+//     std::string s = "1234";
+    
+//     // Swap characters at positions 1 and 3 (0-based indexing)
+//     std::swap(s[1], s[3]);
+    
+//     std::cout << "String after swap: " << s << std::endl;
+//     return 0;
+// }
