@@ -22,7 +22,7 @@ cout << arr[0];
 # Fibonacci Tree 
 ![alt text](<WhatsApp Image 2024-11-01 at 21.21.29.jpeg>)
 
-# subsequences 
+# subsequences ==> picking or not picking 
 ![alt text](image.png)
 
 # subsequences passing arr2 with refrence and without refrence 
@@ -36,3 +36,14 @@ an extra { arr2.pop_back(); } is needed if pass by refrence else not needed
 
 # making fn bool and adding returns makes it only once executable ie matches and returns true to all the fn calls in the stack and no more calls happen
  
+
+# picking 1st or 2nd or 3rd or 4th element ie loop over array 
+# here i==n will not be written bcx we looping over array 
+![alt text](<Screenshot 2024-11-02 at 1.09.25 PM.png>)
+for (int j=i; j<candidates.size();j++) {
+if(j>i && candidates[j]==candidates[j-1]) continue;
+if(candidates[j]>target) break;
+v.push_back(candidates[j]);
+find (j+1, candidates , target-candidates[j] , ans , v  );
+v.pop_back();
+}
