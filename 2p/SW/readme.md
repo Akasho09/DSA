@@ -1,7 +1,5 @@
 ## subarry
 contiginous
-
-## Contiginous subarray 
 - no =  n(n+1)/2;
 - for every new ele (+n)
 - 1 , 1+2 , 1+2+3 ,....
