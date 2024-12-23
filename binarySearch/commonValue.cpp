@@ -8,6 +8,22 @@ Note that an integer is said to be common to nums1 and nums2 if both arrays have
 #include <iostream>
 using namespace std ;
 
+    char nextGreatestLetter(vector<char>& letters, char target) {
+       int n = letters.size();
+       if(letters[n-1]<=target) return letters[0];
+       int s=0;
+       int e = n-1;
+       int m;
+       while(s<=e){
+        m= s+(e-s)/2;
+        if(letters[m]>target) e=m-1;
+        else s=m+1;
+       } 
+     if(letters[m]>target) return letters[m];
+     else return letters[m+1];
+    }
+
+
     int getCommon(vector<int>& nums1, vector<int>& nums2) {
         vector<int> nums3;
         vector<int> nums4;
@@ -35,5 +51,7 @@ using namespace std ;
     }
 
 int main ()  {
+vector<char> v = {'c' , 'f' , 'j'};
+cout << nextGreatestLetter(v,'j');
 
 }
