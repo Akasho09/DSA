@@ -1,8 +1,8 @@
 class Solution {
 public:
     string longestPalindrome(string s) {
-//         int n = s.size();
-//         if(n==2 && s[0]==s[1]) return s;
+        int n = s.size();
+        if(n==2 && s[0]==s[1]) return s;
 //         vector<vector<bool>> dp(n,vector<bool>(n, false));
 //         int ans=1;
 //         int index=0;
@@ -17,19 +17,19 @@ public:
 //             }
 //         }
 
-int diff=2;
-while(diff<n){
-   for(int i=0,j=2;j<n;i++){
-    j=i+diff;
-    if(dp[i+1][j-1]==true  && s[i]==s[j]){
-          dp[i][j]=true;
-          ans=j-i+1;
-          index=i;
-       }
-            }
-    diff++;
-}
-        return s.substr(index,ans);
+// int diff=2;
+// while(diff<n){
+//    for(int i=0,j=2;j<n;i++){
+//     j=i+diff;
+//     if(dp[i+1][j-1]==true  && s[i]==s[j]){
+//           dp[i][j]=true;
+//           ans=j-i+1;
+//           index=i;
+//        }
+//             }
+//     diff++;
+// }
+//         return s.substr(index,ans);
 
         int ans = 1;
         int ind1= 0;
